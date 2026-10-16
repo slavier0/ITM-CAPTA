@@ -1,0 +1,149 @@
+import React from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App.jsx'
+import './styles.css'
+createRoot(document.getElementById('root')).render(<React.StrictMode><App /></React.StrictMode>)
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{font-family:'DM Sans',sans-serif;color:#1d2b25;background:#f5f7f5;font-synthesis:none;text-rendering:optimizeLegibility}*{box-sizing:border-box}body{margin:0;min-width:320px}button,input,select,textarea{font:inherit}button{cursor:pointer}.app-shell{min-height:100vh;display:flex}.sidebar{width:255px;background:#10271f;color:#e9f1eb;display:flex;flex-direction:column;padding:27px 16px 18px;flex-shrink:0}.brand{display:flex;align-items:center;gap:11px;padding:0 10px 28px}.brand-mark{height:42px;width:42px;border-radius:12px;background:#d3e6a5;color:#183b2d;display:grid;place-items:center;font-family:Manrope;font-size:15px;font-weight:800;letter-spacing:-1px}.brand strong{font-family:Manrope;display:block;font-size:18px;letter-spacing:-.4px}.brand span{font-size:8px;letter-spacing:1.2px;color:#91b1a1;display:block;margin-top:4px}.workspace{display:flex;align-items:center;gap:10px;border:1px solid #29463a;background:#18362b;border-radius:10px;padding:13px 11px;margin:0 0 27px}.workspace-dot{width:9px;height:9px;background:#c3e28d;border-radius:50%;box-shadow:0 0 0 4px #2a4a39}.workspace small{display:block;font-size:8px;color:#91b1a1;letter-spacing:.8px;margin-bottom:4px}.workspace b{font-size:11px;font-weight:600}nav{display:grid;gap:6px}nav button{background:transparent;color:#b6c9be;border:0;border-radius:8px;padding:12px 11px;display:flex;align-items:center;gap:12px;text-align:left;font-size:13px}nav button.active,nav button:hover{background:#274638;color:#fff}nav button.active{box-shadow:inset 3px 0 #d3e6a5}.nav-count{margin-left:auto;font-size:10px;background:#355345;padding:3px 7px;border-radius:6px;color:#dbe8df}.sidebar-bottom{display:flex;gap:10px;margin-top:auto;background:#1a392d;border:1px solid #2c4c3c;border-radius:10px;padding:13px 10px;color:#cde0d3}.sidebar-bottom svg{flex-shrink:0;color:#d3e6a5}.sidebar-bottom b{font-size:11px}.sidebar-bottom p{font-size:10px;line-height:1.6;color:#9bb5a6;margin:6px 0 0}.sidebar-footer{padding:22px 9px 0;color:#729183;font-size:9px;letter-spacing:1px}.sidebar-footer span{padding:0 4px;color:#c3e28d}.main{min-width:0;flex:1}.topbar{height:72px;border-bottom:1px solid #e5eae5;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 38px}.breadcrumb{font-size:12px;color:#63746a}.breadcrumb span{padding:0 9px;color:#a9b5ac}.top-actions{display:flex;align-items:center;gap:14px}.connection{display:flex;align-items:center;gap:7px;font-size:11px;padding:7px 10px;border-radius:20px}.connection i{height:7px;width:7px;border-radius:50%;background:currentColor}.connected{background:#e7f5e9;color:#2d7549}.disconnected{background:#fff3dc;color:#94651b}.icon-btn{width:35px;height:35px;border:1px solid #e0e7e1;background:white;color:#596b60;border-radius:9px;display:grid;place-items:center}.page-content{max-width:1500px;margin:0 auto;padding:35px 38px 20px}.page-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:25px;margin:0 0 27px}.page-heading.compact{align-items:center}.eyebrow{color:#628b57;font-size:10px;font-weight:700;letter-spacing:1.5px;margin:0 0 10px}.page-heading h1{font-family:Manrope,sans-serif;font-size:clamp(24px,2.5vw,34px);letter-spacing:-1.2px;line-height:1.2;margin:0;max-width:680px;color:#172d23}.subheading{font-size:13px;color:#718076;line-height:1.6;margin:11px 0 0}.primary{background:#183c2c;color:#fff;border:1px solid #183c2c;border-radius:8px;padding:11px 15px;font-size:12px;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap}.primary:hover{background:#285640}.primary:disabled{opacity:.6;cursor:wait}.secondary{background:#fff;color:#506156;border:1px solid #dfe6e0;border-radius:8px;padding:10px 14px;font-size:12px}.setup-alert,.error-alert,.notice{display:flex;align-items:flex-start;gap:11px;border-radius:10px;padding:14px 16px;margin:0 0 20px;font-size:12px;line-height:1.6}.setup-alert{background:#fff7e8;border:1px solid #f0dfb9;color:#78581c}.setup-alert svg{flex-shrink:0;margin-top:2px}.setup-alert p{margin:4px 0 0;color:#856b39}.setup-alert code{background:#f5e9ce;padding:2px 4px;border-radius:4px}.error-alert{background:#fff0ef;color:#a63c35;border:1px solid #f2d2ce}.notice{background:#eaf6ed;color:#2d7549;border:1px solid #cce7d2}.notice button{margin-left:auto;background:transparent;border:0;color:inherit}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-bottom:34px}.metric{background:#fff;border:1px solid #e6ebe6;border-radius:12px;padding:18px 19px;min-width:0}.metric-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:17px}.metric-icon{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:#edf4e8;color:#527d45}.metric-icon svg{width:18px;height:18px}.metric-kicker{font-size:8px;letter-spacing:1px;color:#a2aea5}.metric>strong{display:block;font-family:Manrope;font-size:29px;letter-spacing:-1px;color:#20382b}.metric-label{display:block;font-size:12px;font-weight:700;margin-top:3px}.metric small{display:block;color:#8a968d;font-size:10px;margin-top:7px}.section-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.section-heading h2{font-family:Manrope;font-size:18px;letter-spacing:-.4px;margin:0}.section-heading p{font-size:11px;color:#7e8b82;margin:5px 0 0}.text-btn{background:transparent;border:0;color:#527d45;font-size:12px;font-weight:700}.text-btn span{padding-left:5px;font-size:17px}.table-wrap{overflow:auto;background:#fff;border:1px solid #e5eae5;border-radius:11px;margin-bottom:28px}table{border-collapse:collapse;width:100%;min-width:850px;text-align:left}th{background:#fafcfa;color:#89968c;font-size:9px;letter-spacing:.7px;text-transform:uppercase;padding:13px 15px;border-bottom:1px solid #e8ede8;font-weight:700}td{padding:15px;border-bottom:1px solid #edf0ed;font-size:11px;color:#536257;vertical-align:middle}tr:last-child td{border-bottom:0}.opp-title{font-weight:700;color:#263a2e;font-size:12px;max-width:250px}.opp-funder{font-size:10px;color:#849087;margin-top:4px}.opp-category{font-size:9px;color:#628b57;margin-top:5px}.pill{display:inline-flex;align-items:center;border-radius:20px;padding:5px 8px;font-size:9px;font-weight:600;line-height:1.3}.pill-green{background:#e4f4e7;color:#2c7447}.pill-warn{background:#fff2d9;color:#92691e}.pill-muted{background:#edf0ed;color:#78847a}.deadline{display:flex;align-items:center;gap:6px;white-space:nowrap}.deadline svg{color:#9aa89d}.source-link{display:inline-flex;align-items:center;gap:5px;color:#4e7a45;text-decoration:none;font-weight:600;white-space:nowrap}.source-link:hover,.source-card a:hover{text-decoration:underline}.muted{color:#9ca69e}.empty-state{min-height:170px;border:1px dashed #d8e1d8;background:#fff;border-radius:11px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px;color:#809087;margin-bottom:28px;font-size:12px;gap:7px}.empty-state h3{font-family:Manrope;color:#34493b;font-size:15px;margin:5px 0 0}.empty-state p{max-width:360px;line-height:1.6;margin:0;color:#839087}.empty-icon{display:grid;place-items:center;width:42px;height:42px;background:#edf4e8;color:#5e8353;border-radius:12px}.lower-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.panel{background:#fff;border:1px solid #e5eae5;border-radius:12px;padding:20px}.panel-title{display:flex;align-items:center;gap:11px;margin-bottom:18px}.panel-icon{width:38px;height:38px;border-radius:10px;background:#edf4e8;color:#527d45;display:grid;place-items:center}.panel-title h3{font-family:Manrope;font-size:14px;margin:0}.panel-title p{font-size:10px;color:#8b978e;margin:5px 0 0}.priority-list{display:grid}.priority{display:flex;align-items:center;gap:12px;border-top:1px solid #eff2ef;padding:12px 0;font-size:11px;color:#526257}.priority-num{font-size:10px;font-weight:700;color:#80a16e}.priority-arrow{margin-left:auto;color:#83a078}.status-row{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #eff2ef;padding:12px 0;font-size:11px;color:#66746a}.status-row b{font-size:12px;color:#304637}.status-foot{background:#f6f8f5;color:#8a968c;font-size:10px;line-height:1.6;padding:11px;border-radius:7px;margin-top:7px}.filters{display:flex;gap:12px;margin-bottom:16px}.searchbox{display:flex;align-items:center;gap:9px;flex:1;border:1px solid #dfe6df;border-radius:8px;background:#fff;padding:0 12px;color:#88968b}.searchbox input{width:100%;border:0;outline:0;padding:12px 0;font-size:12px;background:transparent;color:#263a2e}.filters select,form select,form input,form textarea{border:1px solid #dfe6df;border-radius:7px;background:#fff;color:#314638;padding:10px;font-size:12px;outline-color:#85a97a}.filters select{min-width:190px}.source-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.source-card{border:1px solid #e3e9e3;background:#fff;border-radius:11px;padding:18px;min-width:0}.source-top{display:flex;align-items:center;justify-content:space-between}.source-symbol{display:grid;place-items:center;width:37px;height:37px;border-radius:10px;background:#edf4e8;color:#547e48;font-family:Manrope;font-weight:800}.source-status{font-size:9px;padding:5px 8px;border-radius:20px}.source-status.on{background:#e5f4e7;color:#35764a}.source-status.off{background:#edf0ed;color:#7f8981}.source-card h3{font-family:Manrope;font-size:14px;margin:17px 0 6px}.source-card p{font-size:10px;color:#849087;margin:0 0 17px}.source-meta{display:flex;justify-content:space-between;gap:10px;font-size:9px;color:#929e95;border-top:1px solid #edf1ed;padding:12px 0}.source-meta b{color:#69786d;font-weight:600}.source-card a{display:flex;align-items:center;gap:6px;color:#527d45;font-size:10px;text-decoration:none;font-weight:700}.main-footer{display:flex;justify-content:space-between;gap:12px;color:#a0aaa2;font-size:9px;border-top:1px solid #e4eae4;padding:18px 0 3px;margin-top:26px}.main-footer span:first-child{font-weight:700;letter-spacing:.8px;color:#6f8073}.modal-backdrop{position:fixed;inset:0;background:#0a1d15a8;z-index:5;display:flex;justify-content:flex-end}.modal{height:100%;width:min(560px,100%);background:#f8faf8;overflow:auto;padding:28px}.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:23px}.modal-head h2{font-family:Manrope;margin:0;font-size:24px}.modal form{display:grid;gap:15px}.modal label{display:grid;gap:7px;font-size:11px;color:#5f7064;font-weight:700}.modal input,.modal select,.modal textarea{width:100%;font-weight:400}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-note{display:flex;gap:8px;align-items:flex-start;background:#fff4dd;color:#87621c;padding:11px;border-radius:7px;font-size:10px;line-height:1.5}.form-note svg{flex-shrink:0}.modal-actions{display:flex;justify-content:flex-end;gap:10px;padding-top:6px}.spin{animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@media(max-width:1050px){.sidebar{width:220px}.page-content{padding:28px 24px}.topbar{padding:0 24px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.source-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:720px){.sidebar{width:62px;padding:18px 8px}.brand{padding:0 2px 25px}.brand-mark{width:42px;height:42px}.brand>div:last-child,.workspace,.sidebar-bottom,.sidebar-footer,nav button:not(.active) .nav-count{display:none}nav button{justify-content:center;font-size:0;padding:13px 0}nav button svg{width:20px;height:20px}nav button.active{font-size:0}.nav-count{display:none}.topbar{height:60px;padding:0 13px}.breadcrumb{font-size:10px}.connection{font-size:0;padding:8px}.connection i{width:8px;height:8px}.top-actions{gap:7px}.page-content{padding:24px 14px}.page-heading{align-items:flex-start;flex-direction:column;gap:15px}.page-heading h1{font-size:27px}.metrics{gap:9px}.metric{padding:13px}.metric>strong{font-size:25px}.metric-label{font-size:11px}.metric small{font-size:9px}.lower-grid,.source-grid{grid-template-columns:1fr}.section-heading h2{font-size:16px}.section-heading p{max-width:240px;line-height:1.5}.filters{flex-direction:column}.filters select{width:100%;height:40px}.main-footer{flex-direction:column;gap:6px}.modal{padding:20px}.form-row{grid-template-columns:1fr}.page-heading .primary{width:100%}}
+import { createClient } from '@supabase/supabase-js'
+
+const url = import.meta.env.VITE_SUPABASE_URL
+const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
+
+export const isSupabaseConfigured = Boolean(url && anonKey && !anonKey.includes('COLE_A_CHAVE'))
+export const supabase = isSupabaseConfigured ? createClient(url, anonKey) : null
+
+import { useEffect, useMemo, useState } from 'react'
+import { supabase, isSupabaseConfigured } from './supabase'
+import { Search, RefreshCw, ExternalLink, CalendarDays, Target, Wallet, FileSearch, ShieldCheck, Plus, X, Menu, AlertCircle, CheckCircle2, Clock3 } from 'lucide-react'
+
+const categories = {
+  hub_infrastructure: 'Infraestrutura do Hub',
+  creative_territorial: 'Economia criativa e território',
+  innovation_entrepreneurship: 'Inovação e empreendedorismo',
+  summit_events: 'Taquara Summit e eventos',
+  transversal: 'Transversal'
+}
+const statuses = {
+  open_confirmed: 'Aberto confirmado',
+  announced_not_open: 'Anunciado, ainda não aberto',
+  historical_forecast: 'Previsão histórica',
+  closed: 'Encerrado',
+  suspended: 'Suspenso',
+  needs_verification: 'Precisa verificar'
+}
+const money = value => value == null ? 'Não informado' : Number(value).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 })
+const date = value => value ? new Date(value).toLocaleDateString('pt-BR') : 'Sem prazo informado'
+
+export default function App() {
+  const [tab, setTab] = useState('overview')
+  const [opportunities, setOpportunities] = useState([])
+  const [sources, setSources] = useState([])
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+  const [query, setQuery] = useState('')
+  const [statusFilter, setStatusFilter] = useState('all')
+  const [showForm, setShowForm] = useState(false)
+  const [saving, setSaving] = useState(false)
+  const [notice, setNotice] = useState('')
+  const [form, setForm] = useState({ title:'', funder:'', official_url:'', regulation_url:'', category:'transversal', status:'needs_verification', deadline_at:'', amount_per_project_max:'', next_action:'' })
+
+  async function loadData() {
+    if (!isSupabaseConfigured) return
+    setLoading(true); setError('')
+    try {
+      const [op, src] = await Promise.all([
+        supabase.from('opportunities').select('id,title,funder,official_url,regulation_url,category,status,deadline_at,amount_per_project_min,amount_per_project_max,strategic_fit_score,eligibility_status,financial_viability_status,next_action,last_verified_at,created_at').order('created_at', { ascending: false }).limit(500),
+        supabase.from('funding_sources').select('id,name,base_url,source_type,level,is_active,last_checked_at,last_check_status').order('name')
+      ])
+      if (op.error) throw op.error
+      if (src.error) throw src.error
+      setOpportunities(op.data || []); setSources(src.data || [])
+    } catch (e) { setError(e.message || 'Não foi possível carregar os dados.') }
+    finally { setLoading(false) }
+  }
+  useEffect(() => { loadData() }, [])
+
+  const filtered = useMemo(() => opportunities.filter(o => {
+    const text = `${o.title || ''} ${o.funder || ''} ${categories[o.category] || ''}`.toLowerCase()
+    return text.includes(query.toLowerCase()) && (statusFilter === 'all' || o.status === statusFilter)
+  }), [opportunities, query, statusFilter])
+
+  const openCount = opportunities.filter(o => o.status === 'open_confirmed').length
+  const verificationCount = opportunities.filter(o => o.status === 'needs_verification').length
+  const dueCount = opportunities.filter(o => o.deadline_at && new Date(o.deadline_at) >= new Date() && (new Date(o.deadline_at) - new Date()) < 30*86400000).length
+
+  async function saveOpportunity(e) {
+    e.preventDefault()
+    if (!isSupabaseConfigured) { setNotice('Configure as variáveis do Supabase para gravar dados.'); return }
+    setSaving(true); setNotice('')
+    try {
+      const payload = { ...form, amount_per_project_max: form.amount_per_project_max ? Number(form.amount_per_project_max) : null, deadline_at: form.deadline_at || null, is_demo: false }
+      const { error: saveError } = await supabase.from('opportunities').insert(payload)
+      if (saveError) throw saveError
+      setShowForm(false); setForm({ title:'', funder:'', official_url:'', regulation_url:'', category:'transversal', status:'needs_verification', deadline_at:'', amount_per_project_max:'', next_action:'' })
+      setNotice('Oportunidade registrada. Confirme os dados na fonte oficial antes de classificá-la como aberta.')
+      await loadData()
+    } catch (e) { setNotice(`Não foi possível salvar: ${e.message}`) }
+    finally { setSaving(false) }
+  }
+
+  return <div className="app-shell">
+    <aside className="sidebar">
+      <div className="brand"><div className="brand-mark">ITM</div><div><strong>ITM Capta</strong><span>INTELIGÊNCIA DE RECURSOS</span></div></div>
+      <div className="workspace"><span className="workspace-dot"></span><div><small>ESPAÇO DE TRABALHO</small><b>Instituto Taquara Mais</b></div></div>
+      <nav>
+        <button className={tab==='overview'?'active':''} onClick={()=>setTab('overview')}><Target size={18}/> Visão geral</button>
+        <button className={tab==='opportunities'?'active':''} onClick={()=>setTab('opportunities')}><FileSearch size={18}/> Oportunidades <span className="nav-count">{opportunities.length}</span></button>
+        <button className={tab==='sources'?'active':''} onClick={()=>setTab('sources')}><RefreshCw size={18}/> Fontes de recursos <span className="nav-count">{sources.length}</span></button>
+      </nav>
+      <div className="sidebar-bottom"><ShieldCheck size={17}/><div><b>Verificação responsável</b><p>Oportunidades precisam de confirmação em fontes oficiais.</p></div></div>
+      <div className="sidebar-footer">ITM CAPTA <span>•</span> VERSÃO INICIAL</div>
+    </aside>
+    <main className="main">
+      <header className="topbar"><div className="breadcrumb">Instituto Taquara Mais <span>/</span> {tab==='overview'?'Visão geral':tab==='opportunities'?'Oportunidades':'Fontes de recursos'}</div><div className="top-actions"><span className={`connection ${isSupabaseConfigured?'connected':'disconnected'}`}><i></i>{isSupabaseConfigured?'Banco configurado':'Banco não configurado'}</span><button className="icon-btn" title="Atualizar dados" onClick={loadData}><RefreshCw size={17} className={loading?'spin':''}/></button></div></header>
+      <section className="page-content">
+        {tab==='overview' && <>
+          <div className="page-heading"><div><p className="eyebrow">RADAR DE CAPTAÇÃO</p><h1>Encontre recursos para transformar ideias em projetos.</h1><p className="subheading">Centralize editais, avalie aderência institucional e acompanhe prazos importantes.</p></div><button className="primary" onClick={()=>{setTab('opportunities');setShowForm(true)}}><Plus size={18}/> Nova oportunidade</button></div>
+          {!isSupabaseConfigured && <div className="setup-alert"><AlertCircle size={20}/><div><b>Conecte o banco de dados</b><p>O painel está pronto para configuração. Copie <code>.env.example</code> para <code>.env.local</code> e adicione a chave pública do Supabase. Consulte o README.</p></div></div>}
+          {error && <div className="error-alert"><AlertCircle size={18}/>{error}</div>}
+          {notice && <div className="notice"><CheckCircle2 size={18}/>{notice}<button onClick={()=>setNotice('')}><X size={16}/></button></div>}
+          <div className="metrics">
+            <Metric icon={<FileSearch/>} label="Oportunidades cadastradas" value={opportunities.length} note="Registros no banco" />
+            <Metric icon={<CheckCircle2/>} label="Abertas confirmadas" value={openCount} note="Exigem evidência oficial" />
+            <Metric icon={<AlertCircle/>} label="A verificar" value={verificationCount} note="Pendente de validação" />
+            <Metric icon={<CalendarDays/>} label="Prazos em 30 dias" value={dueCount} note="Com data futura cadastrada" />
+          </div>
+          <div className="section-heading"><div><h2>Oportunidades recentes</h2><p>Priorize o que está confirmado e aderente às metas do ITM.</p></div><button className="text-btn" onClick={()=>setTab('opportunities')}>Ver todas <span>→</span></button></div>
+          <OpportunityList items={opportunities.slice(0,5)} loading={loading} onOpen={()=>setTab('opportunities')} />
+          <div className="lower-grid">
+            <div className="panel"><div className="panel-title"><div className="panel-icon"><Wallet size={19}/></div><div><h3>Prioridades estratégicas</h3><p>Linhas de atuação do ITM</p></div></div><div className="priority-list">{Object.entries(categories).filter(([k])=>k!=='transversal').map(([k,v],i)=><div className="priority" key={k}><span className="priority-num">0{i+1}</span><span>{v}</span><span className="priority-arrow">↗</span></div>)}</div></div>
+            <div className="panel status-panel"><div className="panel-title"><div className="panel-icon"><RefreshCw size={19}/></div><div><h3>Estado do radar</h3><p>Transparência operacional</p></div></div><div className="status-row"><span>Fontes cadastradas</span><b>{sources.length}</b></div><div className="status-row"><span>Fontes ativas</span><b>{sources.filter(s=>s.is_active).length}</b></div><div className="status-row"><span>Coleta automática</span><span className="pill pill-warn">Ainda não ativada</span></div><div className="status-foot">O painel não afirma que fontes foram consultadas automaticamente. A automação será uma etapa separada.</div></div>
+          </div>
+        </>}
+        {tab==='opportunities' && <>
+          <div className="page-heading compact"><div><p className="eyebrow">BASE DE OPORTUNIDADES</p><h1>Oportunidades</h1><p className="subheading">Pesquise, filtre e registre oportunidades com rastreabilidade.</p></div><button className="primary" onClick={()=>setShowForm(true)}><Plus size={18}/> Nova oportunidade</button></div>
+          {notice && <div className="notice"><CheckCircle2 size={18}/>{notice}<button onClick={()=>setNotice('')}><X size={16}/></button></div>}
+          <div className="filters"><div className="searchbox"><Search size={18}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Buscar por edital, instituição ou tema..." /></div><select value={statusFilter} onChange={e=>setStatusFilter(e.target.value)}><option value="all">Todos os status</option>{Object.entries(statuses).map(([k,v])=><option key={k} value={k}>{v}</option>)}</select></div>
+          <OpportunityList items={filtered} loading={loading} />
+        </>}
+        {tab==='sources' && <>
+          <div className="page-heading compact"><div><p className="eyebrow">ORIGEM DAS INFORMAÇÕES</p><h1>Fontes de recursos</h1><p className="subheading">Catálogo inicial de fontes. Cadastro não significa que um edital foi encontrado ou verificado.</p></div></div>
+          {error && <div className="error-alert"><AlertCircle size={18}/>{error}</div>}
+          <div className="source-grid">{sources.map(s=><div className="source-card" key={s.id}><div className="source-top"><span className="source-symbol">{(s.name||'F').slice(0,1)}</span><span className={`source-status ${s.is_active?'on':'off'}`}>{s.is_active?'Ativa':'Inativa'}</span></div><h3>{s.name}</h3><p>{s.level || 'Nível não definido'} · {s.source_type || 'website'}</p><div className="source-meta"><span>Última consulta</span><b>{date(s.last_checked_at)}</b></div><a href={s.base_url} target="_blank" rel="noreferrer">Abrir fonte oficial <ExternalLink size={14}/></a></div>)}</div>
+          {!sources.length && !loading && <Empty title="Nenhuma fonte carregada" text="Configure a conexão com o Supabase e atualize o painel."/>}
+        </>}
+        <footer className="main-footer"><span>ITM Capta</span><span>Inteligência para captação de recursos · Taquara, RS</span><span>Dados sujeitos a verificação oficial</span></footer>
+      </section>
+    </main>
+    {showForm && <div className="modal-backdrop" onMouseDown={e=>{if(e.target===e.currentTarget)setShowForm(false)}}><div className="modal"><div className="modal-head"><div><p className="eyebrow">REGISTRO MANUAL</p><h2>Nova oportunidade</h2></div><button className="icon-btn" onClick={()=>setShowForm(false)}><X/></button></div><form onSubmit={saveOpportunity}><label>Título do edital ou oportunidade *<input required value={form.title} onChange={e=>setForm({...form,title:e.target.value})} /></label><label>Instituição financiadora *<input required value={form.funder} onChange={e=>setForm({...form,funder:e.target.value})} /></label><label>Link da fonte oficial *<input required type="url" placeholder="https://" value={form.official_url} onChange={e=>setForm({...form,official_url:e.target.value})} /></label><label>Link do regulamento<input type="url" placeholder="https://" value={form.regulation_url} onChange={e=>setForm({...form,regulation_url:e.target.value})} /></label><div className="form-row"><label>Categoria<select value={form.category} onChange={e=>setForm({...form,category:e.target.value})}>{Object.entries(categories).map(([k,v])=><option key={k} value={k}>{v}</option>)}</select></label><label>Status inicial<select value={form.status} onChange={e=>setForm({...form,status:e.target.value})}>{Object.entries(statuses).map(([k,v])=><option key={k} value={k}>{v}</option>)}</select></label></div><div className="form-row"><label>Prazo final<input type="date" value={form.deadline_at} onChange={e=>setForm({...form,deadline_at:e.target.value})}/></label><label>Valor máximo por projeto (R$)<input type="number" min="0" value={form.amount_per_project_max} onChange={e=>setForm({...form,amount_per_project_max:e.target.value})}/></label></div><label>Próxima ação recomendada<textarea rows="2" value={form.next_action} onChange={e=>setForm({...form,next_action:e.target.value})}/></label><div className="form-note"><AlertCircle size={16}/> O registro manual não substitui a validação do regulamento e da elegibilidade do ITM.</div><div className="modal-actions"><button type="button" className="secondary" onClick={()=>setShowForm(false)}>Cancelar</button><button className="primary" disabled={saving}>{saving?'Salvando...':'Salvar oportunidade'}</button></div></form></div></div>}
+  </div>
+}
+
+function Metric({icon,label,value,note}) { return <div className="metric"><div className="metric-top"><span className="metric-icon">{icon}</span><span className="metric-kicker">ITM CAPTA</span></div><strong>{value}</strong><span className="metric-label">{label}</span><small>{note}</small></div> }
+function OpportunityList({items,loading,onOpen}) {
+  if (loading) return <div className="empty-state"><RefreshCw className="spin"/> Carregando dados...</div>
+  if (!items.length) return <Empty title="Ainda não há oportunidades cadastradas" text="Cadastre uma oportunidade para começar a organizar a análise e os próximos passos." />
+  return <div className="table-wrap"><table><thead><tr><th>Oportunidade</th><th>Status</th><th>Aderência</th><th>Valor máximo</th><th>Prazo</th><th>Fonte</th></tr></thead><tbody>{items.map(o=><tr key={o.id}><td><div className="opp-title">{o.title}</div><div className="opp-funder">{o.funder || 'Financiador não informado'}</div><div className="opp-category">{categories[o.category] || o.category}</div></td><td><span className={`pill ${o.status==='open_confirmed'?'pill-green':o.status==='closed'||o.status==='suspended'?'pill-muted':'pill-warn'}`}>{statuses[o.status] || o.status}</span></td><td>{o.strategic_fit_score == null ? <span className="muted">Pendente</span> : <b>{o.strategic_fit_score}/100</b>}</td><td>{money(o.amount_per_project_max)}</td><td><span className="deadline"><CalendarDays size={14}/>{date(o.deadline_at)}</span></td><td>{o.official_url?<a className="source-link" href={o.official_url} target="_blank" rel="noreferrer">Ver fonte <ExternalLink size={13}/></a>:<span className="muted">Não informado</span>}</td></tr>)}</tbody></table></div>
+}
+function Empty({title,text}) { return <div className="empty-state"><div className="empty-icon"><FileSearch size={22}/></div><h3>{title}</h3><p>{text}</p></div> }
